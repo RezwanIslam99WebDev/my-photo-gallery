@@ -33,3 +33,40 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
+
+/* Responsive style part */
+
+@media screen and (max-width:576px) {
+    .images-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .child-images-container1 {
+        display: flex;
+        gap: 5px;
+    }
+
+    .child-images-container1 img {
+        width: calc((100% - 5px)/2);
+        /* width: 50%; */
+    }
+}
+
+/* Medium Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .images-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .child-images-container1 {
+        display: flex;
+        gap: 5px;
+    }
+
+    .child-images-container1 img {
+        width: calc((100% - 5px)/2);
+        /* width: 50%; */
+    }
+}
